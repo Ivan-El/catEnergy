@@ -1,5 +1,25 @@
 .page-header {
+  position: relative;
+
   color: #000000;
 
   background-color: #ffffff;
+
+  outline: 2px solid red;
+}
+
+.main-nav {
+  display: none;
+
+  &--show {
+    display: block;
+  }
+}
+
+.main-nav__list {
+  .list-reset();
+}
+
+.main-nav__link {
+  .link-reset();
 }
