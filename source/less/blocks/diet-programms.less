@@ -1,0 +1,81 @@
+.diet-programms__list {
+  .list-reset();
+  margin: 20px 0;
+}
+
+.diet-programms__item {
+  margin-bottom: 20px;
+  padding: 20px;
+
+  background-color: @basic-grey-color;
+}
+
+.diet-programms__heading {
+  position: relative;
+
+  margin: 0;
+  padding-left: 70px;
+
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 37px;
+  text-transform: uppercase;
+
+  &::before {
+    .absolute();
+    width: 50px;
+    height: 50px;
+
+    background-color: @light-green-color;
+    border-radius: 50%;
+  }
+}
+
+.diet-programms__description {
+  padding-bottom: 23px;
+
+  font-family: @font-second;
+  color: @special-dark-grey;
+
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.diet-programms__link {
+  .link-reset();
+
+  position: relative;
+
+  padding-top: 4px;
+  padding-right: 49px;
+  padding-bottom: 4px;
+  padding-left: 0;
+
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @color-font-main;
+
+  &::before {
+    .absolute();
+    left: 100px;
+    top: 50%;
+
+    width: 24px;
+    height: 2px;
+
+    background-color: @black-color;
+  }
+
+  &::after {
+    .absolute();
+    left: 119px;
+    top: 11px;
+
+    width: 0;
+    height: 0;
+
+    border: 6px solid transparent;
+    border-left: 6px solid @black-color;
+  }
+}
