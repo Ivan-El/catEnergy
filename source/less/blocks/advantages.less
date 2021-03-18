@@ -1,1 +1,35 @@
-// to be continue...
+.advantages__heading {
+  margin-top: 27px;
+  margin-bottom: 38px;
+
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.advantages__list {
+  .list-reset();
+
+  font-family: @font-second;
+  color: @special-dark-grey;
+}
+
+.advantages__item {
+  position: relative;
+
+  min-height: 60px;
+  margin-bottom: 20px;
+  padding-left: 80px;
+
+  &::before {
+    .absolute();
+    width: 60px;
+    height: 60px;
+
+    background-color: @light-green-color;
+  }
+}
+
+.advantages__description {
+  margin: 0;
+}
