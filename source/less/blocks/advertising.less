@@ -1,0 +1,35 @@
+.advertising {
+  min-height: 289px;
+  margin-bottom: 35px;
+  padding: 58px;
+  padding-bottom: 43px;
+
+  font-family: @font-second;
+  color: @color-font-second;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+
+  background-color: @light-green-color;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.advertisement__descroption {
+  position: relative;
+
+  margin: 0;
+  padding-top: 128px;
+
+  &::before {
+    .absolute();
+    top: 0;
+    left: calc(78px / 2);
+
+    width: 78px;
+    height: 80px;
+
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+  }
+}
