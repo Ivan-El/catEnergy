@@ -13,7 +13,23 @@
 .page-header__wrapper {
   position: relative;
 
-  border: 1px solid #e6e6e6;
+  &::before {
+    .absolute();
+    left: 50%;
+    bottom: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: #e6e6e6;
+  }
+
+  &::after {
+    .absolute();
+    right: 50%;
+    bottom: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: #e6e6e6;
+  }
 }
 
 .page-header__logo {
@@ -49,9 +65,23 @@
 
   text-align: center;
 
-  border-left: 1px solid #e6e6e6;
-  border-right: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
+  &::before {
+    .absolute();
+    left: 50%;
+    bottom: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: #e6e6e6;
+  }
+
+  &::after {
+    .absolute();
+    right: 50%;
+    bottom: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: #e6e6e6;
+  }
 }
 
 .main-nav__link--current {
@@ -69,6 +99,14 @@
     width: 174px;
 
     border: none;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 
   .hamburger-button {
@@ -87,6 +125,14 @@
 
   .main-nav__item {
     border: none;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 
   .main-nav__link--current {

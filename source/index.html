@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Интернет-магазин функционального питания для котов "Cat Energy"</title>
-    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font">
-    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font" crossorigin>
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" crossorigin>
     <link href="/css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
@@ -37,10 +37,12 @@
 
       <h1 class="visually-hidden">Магазин функционального питания для котов «Кэт энерджи»</h1>
 
-      <section class="page-promo container">
+      <section class="page-promo">
         <div class="page-promo__title-wrapper">
-          <h2 class="page-promo__heading">Функциональное питание для котов</h2>
-          <p class="page-promo__slogan">Занялся собой? Займись котом!</p>
+          <div class="container">
+            <h2 class="page-promo__heading">Функциональное питание для котов</h2>
+            <p class="page-promo__slogan">Занялся собой? Займись котом!</p>
+          </div>
         </div>
         <div class="page-promo__image-wrapper">
           <img class="promo__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Банка питания Cat Energy PRO со вкусом курицы">
