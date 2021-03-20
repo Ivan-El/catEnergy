@@ -2,22 +2,26 @@
   margin-bottom: 20px;
 
   text-align: center;
-  text-transform: uppercase;
+}
+
+.page-promo__title-wrapper {
+  padding-top: 27px;
+  padding-bottom: 168px;
 
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .page-promo__heading {
   margin: 0;
-  margin-bottom: 20px;
-  padding-top: 20px;
+  margin-bottom: 25px;
 
   font-size: 36px;
   color: @color-font-second;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 36px;
-  letter-spacing: 0;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -27,4 +31,19 @@
 
   line-height: 14px;
   color: @color-font-second;
+  text-transform: uppercase;
+}
+
+.page-promo__image-wrapper {
+  padding-top: 135px;
+}
+
+.page-promo__image-container {
+  position: relative;
+}
+
+.page-promo__image {
+  .absolute();
+  bottom: 0;
+  left: 20px;
 }
