@@ -71,7 +71,7 @@
 
   .page-promo__heading {
     margin: 0;
-    margin-bottom: 41px;
+    margin-bottom: 40px;
 
     font-size: 60px;
     color: @color-font-main;
@@ -113,5 +113,51 @@
     max-width: 30%;
     margin-left: 83px;
     padding: 15px 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-promo {
+    margin-bottom: 80px;
+
+    text-align: left;
+  }
+
+  .page-promo__title-wrapper {
+    padding: 0;
+
+    background-image: none;
+  }
+
+  .page-promo__title-container {
+    padding-right: 550px;
+    padding-left: 80px;
+  }
+
+  .page-promo__slogan {
+    margin-bottom: 40px;
+  }
+
+  .page-promo__image-wrapper {
+    padding: 0;
+  }
+
+  .page-promo__image-container {
+    padding-bottom: 182px;
+  }
+
+  .page-promo__image {
+    .absolute();
+    top: -300px;
+    left: calc(100% - 280px);
+
+    width: 280px;
+    height: 271px;
+  }
+
+  .page-promo__link {
+    min-width: 245px;
+    max-width: 20%;
+    margin-left: 80px;
   }
 }
