@@ -30,11 +30,38 @@
 
   &::before {
     .absolute();
+    top: -20%;
+    left: 0;
+
     width: 50px;
     height: 50px;
 
     background-color: @light-green-color;
     border-radius: 50%;
+  }
+
+  &--slim::after {
+    .absolute();
+    top: -10px;
+    left: 10px;
+
+    width: 36px;
+    height: 56px;
+
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--pro::after {
+    .absolute();
+    top: 5px;
+    left: -10px;
+
+    width: 67px;
+    height: 28px;
+
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
   }
 }
 
