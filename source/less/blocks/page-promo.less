@@ -44,6 +44,74 @@
 
 .page-promo__image {
   .absolute();
-  bottom: 0;
-  left: 20px;
+  bottom: 47px;
+  left: calc(100% - 280px);
+
+  width: 280px;
+  height: 271px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-promo {
+    margin-bottom: 0;
+
+    text-align: left;
+  }
+
+  .page-promo__title-wrapper {
+    padding: 0;
+
+    background-image: none;
+  }
+
+  .page-promo__title-container {
+    padding-right: 207px;
+    padding-left: 87px;
+  }
+
+  .page-promo__heading {
+    margin: 0;
+    margin-bottom: 41px;
+
+    font-size: 60px;
+    color: @color-font-main;
+    line-height: 60px;
+    text-shadow: none;
+  }
+
+  .page-promo__slogan {
+    margin: 0;
+    margin-bottom: 10px;
+
+    line-height: 20px;
+    font-size: 20px;
+    color: @color-font-main;
+    text-transform: uppercase;
+  }
+
+  .page-promo__image-wrapper {
+    padding: 0;
+  }
+
+  .page-promo__image-container {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 526px;
+  }
+
+  .page-promo__image {
+    .absolute();
+    top: 0;
+    left: calc(100% - 280px);
+
+    width: 280px;
+    height: 271px;
+  }
+
+  .page-promo__link {
+    min-width: 245px;
+    max-width: 30%;
+    margin-left: 83px;
+    padding: 15px 25px;
+  }
 }
