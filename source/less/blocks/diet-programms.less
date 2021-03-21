@@ -21,6 +21,7 @@
   position: relative;
 
   margin: 0;
+  margin-bottom: 29px;
   padding-left: 70px;
 
   font-size: 24px;
@@ -66,6 +67,8 @@
 }
 
 .diet-programms__description {
+  margin: 0;
+  margin-bottom: 15px;
   padding-bottom: 23px;
 
   font-family: @font-second;
@@ -79,10 +82,7 @@
 
   position: relative;
 
-  padding-top: 4px;
-  padding-right: 49px;
-  padding-bottom: 4px;
-  padding-left: 0;
+  padding: 4px 0;
 
   font-size: 16px;
   line-height: 16px;
@@ -112,4 +112,70 @@
     border: 6px solid transparent;
     border-left: 6px solid @black-color;
   }
+}
+
+@media (min-width: @tablet-width) {
+  .diet-programms {
+    margin-bottom: 45px;
+  }
+
+  .diet-programms__item {
+    margin-bottom: 30px;
+    padding-top: 77px;
+    padding-right: 320px;
+    padding-bottom: 53px;
+    padding-left: 52px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .diet-programms__heading {
+    margin-bottom: 24px;
+    padding-left: 0;
+
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      .absolute();
+      top: 11px;
+      left: 400px;
+
+      width: 200px;
+      height: 200px;
+    }
+
+    &--slim::after {
+      .absolute();
+      top: 0;
+      left: 420px;
+
+      width: 140px;
+      height: 192px;
+    }
+
+    &--pro::after {
+      .absolute();
+      top: 55px;
+      left: 365px;
+
+      width: 268px;
+      height: 112px;
+    }
+  }
+
+  .diet-programms__description {
+    border: none;
+  }
+
+  .diet-programms__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  //
 }
