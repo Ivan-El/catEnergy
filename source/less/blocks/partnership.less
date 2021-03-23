@@ -38,6 +38,8 @@
     padding-bottom: 52px;
     padding-left: 41px;
 
+    background-color: @color-main;
+
     &--inner {
       background-color: @basic-grey-color;
     }
@@ -67,5 +69,47 @@
 }
 
 @media (min-width: @desktop-width) {
-  //
+  .partnership-map-wrapper {
+    position: relative;
+  }
+
+  .partnership {
+    .absolute();
+    top: 95px;
+    left: 110px;
+
+    width: 570px;
+    height: 200px;
+
+    padding-top: 62px;
+    padding-right: 41px;
+    padding-bottom: 52px;
+    padding-left: 41px;
+
+    &--inner {
+      background-color: @basic-grey-color;
+    }
+  }
+
+  .partnership__call {
+    width: 171px;
+
+    font-size: 20px;
+    line-height: 21px;
+    text-align: left;
+  }
+
+  .partnership__contacts {
+    width: 159px;
+
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .partnership__contacts--city {
+    display: block;
+
+    margin-top: 20px;
+  }
 }
