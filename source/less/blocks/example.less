@@ -211,5 +211,78 @@
 }
 
 @media (min-width: @desktop-width) {
-  //
+  .example__heading {
+    margin-bottom: 76px;
+  }
+
+  .example__desktop-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .out();
+    width: 1230px;
+    margin: 0 auto;
+  }
+
+  .example__desktop-wrapper .container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .example__description-wrapper {
+    width: 436px;
+  }
+
+  .example__description {
+    width: 436px;
+    margin-bottom: 54px;
+    padding-right: 10px;
+  }
+
+  .example__list-wrapper {
+    justify-content: space-between;
+    row-gap: 55px;
+    padding-bottom: 0;
+  }
+
+  .example__total {
+    width: 366px;
+    margin: 0;
+
+    text-align: left;
+  }
+
+  .example__total-price {
+    margin-left: 40px;
+  }
+
+  .example__image-wrapper {
+    position: relative;
+
+    width: 690px;
+    min-height: 0;
+
+    background-color: @light-grey-color;
+  }
+
+  .example__image-container {
+    padding: 0;
+  }
+
+  .example__image {
+    .absolute();
+    top: 0;
+    left: 50%;
+
+    margin-bottom: 27px;
+  }
+
+  .example__toggels {
+    padding-bottom: 0;
+  }
+
+  .example__range-toggel {
+    width: 428px;
+    height: 34px;
+  }
 }
