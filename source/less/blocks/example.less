@@ -1,5 +1,4 @@
 .example {
-  margin-bottom: 20px;
   padding-top: 25px;
 
   background-color: @light-grey-color;
@@ -30,6 +29,8 @@
   align-items: center;
 
   min-width: 280px;
+  margin: 0;
+  padding: 0;
 }
 
 .example__item {
@@ -37,18 +38,20 @@
 
   min-width: 124px;
   min-height: 56px;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 
   text-align: center;
 
   border: 1px solid @special-grey;
+  border-radius: 2px;
 }
 
 .example__parameter {
   .absolute();
   top: 48px;
-  left: 25px;
-  min-width: 75px;
+  left: 20px;
+
+  width: 80px;
 
   font-family: @font-second;
   font-size: 12px;
@@ -93,5 +96,120 @@
   font-size: 18px;
   text-transform: uppercase;
 
+  background-color: inherit;
+
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    padding-top: 0;
+
+    background-color: @color-main;
+  }
+
+  .example__heading {
+    margin-bottom: 63px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__description {
+    margin-bottom: 54px;
+    padding-right: 10px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__list-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 250px;
+  }
+
+  .example__list {
+    width: 366px;
+  }
+
+  .example__item {
+    width: 162px;
+    min-height: 69px;
+    margin-bottom: 0;
+  }
+
+  .example__parameter {
+    top: 60px;
+
+    width: auto;
+    padding: 0 7px;
+
+    font-size: 14px;
+    line-height: 14px;
+
+    background-color: @color-main;
+
+    &--weight {
+      left: 25px;
+    }
+
+    &--time {
+      left: 10px;
+    }
+  }
+
+  .example__value {
+    margin: auto;
+    padding-top: 15px;
+
+    font-size: 30px;
+    line-height: 37px;
+
+    background-color: @color-main;
+  }
+
+  .example__total {
+    width: 174px;
+    margin: 0;
+
+    font-size: 20px;
+    text-align: right;
+  }
+
+  .example__image-wrapper {
+    position: relative;
+
+    min-height: 462px;
+
+    background-color: @light-grey-color;
+  }
+
+  .example__image-container {
+    padding-top: 380px;
+    padding-left: 56px;
+    padding-right: 62px;
+  }
+
+  .example__image {
+    .absolute();
+    top: 0;
+    left: 50%;
+
+    margin-bottom: 27px;
+  }
+
+  .example__toggels {
+    padding-bottom: 0;
+  }
+
+  .example__range-toggel {
+    width: 428px;
+    height: 34px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  //
 }
