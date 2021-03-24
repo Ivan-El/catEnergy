@@ -1,0 +1,27 @@
+.page-main__heading {
+  position: relative;
+
+  padding-bottom: 37px;
+
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+
+  &::before {
+    .absolute();
+    left: 50%;
+    bottom: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: @special-light-grey;
+  }
+
+  &::after {
+    .absolute();
+    right: 50%;
+    bottom: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: @special-light-grey;
+  }
+}
