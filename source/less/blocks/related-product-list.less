@@ -1,4 +1,8 @@
-.related-products__heading {
+.related-product-list {
+  margin-bottom: 39px;
+}
+
+.related-product-list__heading {
   position: relative;
 
   margin: 0;
@@ -8,14 +12,16 @@
   font-size: 24px;
   line-height: 24px;
 
-  border-bottom: 1px solid @special-light-grey;
+  border-bottom: 1px solid @special-grey;
 
   &::after {
     .absolute();
-    top: 16px;
-    right: 0;
-    width: 45px;
+    top: 25%;
+    left: 90%;
+
+    width: 100vw;
     height: 2px;
+
     background-color: @light-green-color;
   }
 }
