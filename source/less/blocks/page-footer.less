@@ -2,10 +2,15 @@
   background-color: @basic-grey-color;
 }
 
-.page-footer--container {
+.page-footer__container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__logo {
@@ -34,6 +39,10 @@
 
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }
 
 .page-footer__social-item {
