@@ -1,0 +1,27 @@
+.catalog-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.catalog-list__item {
+  position: relative;
+
+  &::before {
+    .absolute();
+    left: 50%;
+    bottom: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: @special-light-grey;
+  }
+
+  &::after {
+    .absolute();
+    right: 50%;
+    bottom: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: @special-light-grey;
+  }
+}
