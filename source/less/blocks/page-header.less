@@ -17,6 +17,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
 
@@ -26,6 +27,14 @@
 
 .page-header__wrapper {
   position: relative;
+
+  padding-top: 12px;
+  padding-bottom: 16px;
+
+  &--collapsed {
+    padding-top: 0;
+    padding-bottom: 28px;
+  }
 
   &::before {
     .absolute();
@@ -47,6 +56,8 @@
 
   @media (min-width: @tablet-width) {
     width: 174px;
+    padding-top: 33px;
+    padding-bottom: 0;
 
     border: none;
 
@@ -62,11 +73,4 @@
   @media (min-width: @desktop-width) {
     width: 202px;
   }
-}
-
-.page-header__logo {
-  display: block;
-
-  padding-top: 12px;
-  padding-bottom: 16px;
 }
