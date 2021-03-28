@@ -1,9 +1,29 @@
 .product {
+  position: relative;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 13px;
 
   padding: 25px 0;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 33px;
+
+    padding-top: 160px;
+    padding-right: 36px;
+    padding-bottom: 40px;
+    padding-left: 36px;
+  }
+}
+
+.product__image {
+  @media (min-width: @tablet-width) {
+    .absolute();
+    top: 0;
+    left: 33%;
+  }
 }
 
 .product__title {
@@ -15,6 +35,16 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 21px;
+  }
 }
 
 .product__parameter-list {
@@ -24,67 +54,32 @@
   font-size: 12px;
   line-height: 16px;
   color: @special-dark-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .product__parameter-wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 5px;
+    padding-bottom: 9px;
+
+    border-bottom: 1px solid @special-grey;
+  }
 }
 
 .product__link {
   grid-column: span 2;
-}
 
-.goods__show {
-  padding: 25px 0;
-
-  text-align: center;
-}
-
-.goods__show-title {
-  position: relative;
-
-  margin: 0;
-  margin-bottom: 8px;
-  padding-top: 53px;
-
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #111111;
-
-  &::before {
-    .absolute();
-    top: 15px;
-    left: calc(50% - 15px);
-    width: 30px;
-    height: 2px;
-
-    background-color: #d3d3d3;
+  @media (min-width: @tablet-width) {
+    max-height: 40px;
+    font-size: 16px;
+    line-height: 20px;
   }
-
-  &::after {
-    .absolute();
-    top: 15px;
-    left: calc(50% - 15px);
-
-    width: 30px;
-    height: 2px;
-
-    background-color: #d3d3d3;
-
-    transform: rotate(90deg);
-  }
-}
-
-.goods__show-description {
-  margin: 0;
-  margin-bottom: 21px;
-
-  font-family: @font-second;
-  font-size: 12px;
-  line-height: 16px;
-  color: @special-dark-grey;
 }
