@@ -4,6 +4,10 @@
 
   border-bottom: 1px solid @special-grey;
 
+  &:first-of-type {
+    border-top: 1px solid @special-grey;
+  }
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -16,6 +20,19 @@
 
     border-right: 1px solid @special-grey;
     border-left: 1px solid @special-grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 286px 244px;
+    grid-column-gap: 40px;
+
+    padding-top: 11px;
+    padding-right: 0;
+    padding-bottom: 21px;
+    padding-left: 0;
+
+    border: none;
+    border-bottom: 1px solid @special-grey;
   }
 }
 
@@ -64,5 +81,9 @@
 .related-product__link {
   @media (min-width: @tablet-width) {
     grid-column: span 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: span 1;
   }
 }

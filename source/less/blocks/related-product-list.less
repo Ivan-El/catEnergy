@@ -4,6 +4,10 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 69px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 82px;
+  }
 }
 
 .related-product-list__heading {
@@ -15,8 +19,6 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-
-  border-bottom: 1px solid @special-grey;
 
   &::after {
     .absolute();
@@ -52,5 +54,13 @@
       top: 19%;
       left: 60%;
     }
+  }
+}
+
+.related-product-list__wrapper {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 896px 245px;
+    grid-column-gap: 80px;
   }
 }
