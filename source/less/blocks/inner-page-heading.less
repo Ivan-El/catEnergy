@@ -7,21 +7,30 @@
   font-size: 36px;
   line-height: 36px;
 
-  &::before {
-    .absolute();
-    left: 50%;
-    bottom: 0;
-    width: 100vw;
-    height: 1px;
-    background-color: @special-light-grey;
-  }
+  &--catalog {
+    &::before {
+      .absolute();
+      left: 50%;
+      bottom: 0;
+      width: 100vw;
+      height: 1px;
+      background-color: @special-light-grey;
+    }
 
-  &::after {
-    .absolute();
-    right: 50%;
-    bottom: 0;
-    width: 100vw;
-    height: 1px;
-    background-color: @special-light-grey;
+    &::after {
+      .absolute();
+      right: 50%;
+      bottom: 0;
+      width: 100vw;
+      height: 1px;
+      background-color: @special-light-grey;
+    }
+
+    @media (min-width: @tablet-width) {
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
   }
 }
