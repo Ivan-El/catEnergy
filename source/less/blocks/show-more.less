@@ -59,6 +59,18 @@
       width: 60px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 23px;
+    padding: 0 10px;
+    padding-top: 109px;
+
+    &::before,
+    &::after {
+      top: 5%;
+      left: 30%;
+    }
+  }
 }
 
 .show-more__description {
@@ -76,6 +88,10 @@
     font-size: 16px;
     line-height: 18px;
     text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 10px;
   }
 }
 
