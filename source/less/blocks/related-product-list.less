@@ -1,5 +1,9 @@
 .related-product-list {
   margin-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 69px;
+  }
 }
 
 .related-product-list__heading {
@@ -23,5 +27,30 @@
     height: 2px;
 
     background-color: @light-green-color;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 37px;
+    padding-bottom: 80px;
+
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      .absolute();
+
+      top: 19%;
+      right: 105%;
+
+      width: 100vw;
+      height: 2px;
+
+      background-color: @light-green-color;
+    }
+
+    &::after {
+      top: 19%;
+      left: 60%;
+    }
   }
 }
