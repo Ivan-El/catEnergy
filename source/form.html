@@ -52,8 +52,8 @@
                 <label class="form__label" for="form__input-text--weight">Вес (кг):*</label>
                 <input class="form__input form__input-text" id="form__input-text--weight" type="text" placeholder="7">
               </div>
-              <div class="form__input-wrapper" for="form__input-text--age">
-                <label class="form__label">Возраст (лет):</label>
+              <div class="form__input-wrapper">
+                <label class="form__label" for="form__input-text--age">Возраст (лет):</label>
                 <input class="form__input form__input-text" id="form__input-text--age" type="text" placeholder="7">
               </div>
             </fieldset>
@@ -72,9 +72,17 @@
               </label>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--contacts">
-              <legend class="form__legend">Контактные данные (владельца кота)</legend>
-              <label class="form__label">E-mail:*<input class="form__input form__input-contact" type="email" placeholder="kuklachev@gmail.com"></label>
-              <label class="form__label">Телефон:*<input class="form__input form__input-contact" type="tel" placeholder="8 (960) 900-60-90"></label>
+              <legend class="form__legend form__legend--contacts">Контактные данные (владельца кота)</legend>
+
+
+              <div class="form__input-wrapper">
+                <label class="form__label" for="form__input-contact--email">E-mail:*</label>
+                <input class="form__input form__input-contact" id="form__input-contact--email" type="email" placeholder="kuklachev@gmail.com">
+              </div>
+              <div class="form__input-wrapper">
+                <label class="form__label" for="form__input-contact--tel">Телефон:*</label>
+                <input class="form__input form__input-contact" id="form__input-contact--tel" type="tel" placeholder="8 (960) 900-60-90">
+              </div>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--comment">
               <legend class="form__legend">Комментарий</legend>

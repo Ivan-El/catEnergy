@@ -97,6 +97,8 @@
   padding-top: 13px;
   padding-bottom: 15px;
   padding-left: 15px;
+
+  border: 1px solid @special-grey;
 }
 
 .form__input-radio-indicator {
@@ -122,4 +124,30 @@
   background-color: @light-green-color;
 
   border-radius: 50%;
+}
+
+.form__legend {
+  position: relative;
+
+  margin-bottom: 34px;
+
+  font-size: 24px;
+  line-height: 26px;
+
+  &::after {
+    .absolute();
+    top: 10px;
+    left: 115%;
+
+    width: 100vw;
+    height: 2px;
+
+    background-color: @light-green-color;
+  }
+
+  &--contacts {
+    &::after {
+      left: 85%;
+    }
+  }
 }
