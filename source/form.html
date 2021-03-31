@@ -59,22 +59,20 @@
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--programm-select">
               <label class="form__label form__label--radio">
-                <input class="form__input--radio visually-hidden" type="radio" name="programm-target" checked>
+                <input class="form__input-radio visually-hidden" type="radio" name="programm-target" checked>
                 <span class="form__input-radio-indicator"></span>похудение
               </label>
               <label class="form__label  form__label--radio">
-                <input class="form__input--radio visually-hidden" type="radio" name="programm-target">
+                <input class="form__input-radio visually-hidden" type="radio" name="programm-target">
                 <span class="form__input-radio-indicator"></span>Набор массы
               </label>
               <label class="form__label  form__label--radio">
-                <input class="form__input--radio visually-hidden" type="radio" name="programm-target">
+                <input class="form__input-radio visually-hidden" type="radio" name="programm-target">
                 <span class="form__input-radio-indicator"></span>Не знаю (Нужен ваш совет)
               </label>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--contacts">
               <legend class="form__legend form__legend--contacts">Контактные данные (владельца кота)</legend>
-
-
               <div class="form__input-wrapper">
                 <label class="form__label" for="form__input-contact--email">E-mail:*</label>
                 <input class="form__input form__input-contact" id="form__input-contact--email" type="email" placeholder="kuklachev@gmail.com">
@@ -90,10 +88,22 @@
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--checkbox-select">
               <legend class="form__legend">Дополнительно</legend>
-              <label class="form__label"><input class="form__input form__input-checkbox" type="checkbox" checked>сахарозаменитель</label>
-              <label class="form__label"><input class="form__input form__input-checkbox" type="checkbox">питьевая вода</label>
-              <label class="form__label"><input class="form__input form__input-checkbox" type="checkbox">молоко</label>
-              <label class="form__label"><input class="form__input form__input form__input-checkbox" type="checkbox">витамины</label>
+              <label class="form__label form__label--checkbox">
+                <input class="form__input-checkbox visually-hidden" type="checkbox" checked>
+                <span class="form__input-checkbox-indicator"></span>сахарозаменитель
+              </label>
+              <label class="form__label form__label--checkbox">
+                <input class="form__input-checkbox visually-hidden" type="checkbox">
+                <span class="form__input-checkbox-indicator"></span>питьевая вода
+              </label>
+              <label class="form__label form__label--checkbox">
+                <input class="form__input-checkbox visually-hidden" type="checkbox">
+                <span class="form__input-checkbox-indicator"></span>молоко
+              </label>
+              <label class="form__label form__label--checkbox">
+                <input class="form__input-checkbox visually-hidden" type="checkbox">
+                <span class="form__input-checkbox-indicator"></span>витамины
+              </label>
             </fieldset>
             <button class="form__button button" type="submit">отправить заявку</button>
             <span>* — Обязательные поля</span>

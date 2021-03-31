@@ -48,6 +48,10 @@
     color: #222222;
   }
 
+  &--checkbox-select {
+    margin-bottom: 34px;
+  }
+
   &--personal-data,
   &--personal-contact,
   &--comment {
@@ -61,7 +65,8 @@
   margin-bottom: 13px;
   padding: 0;
 
-  &--radio {
+  &--radio,
+  &--checkbox {
     position: relative;
 
     margin-bottom: 25px;
@@ -101,7 +106,8 @@
   border: 1px solid @special-grey;
 }
 
-.form__input-radio-indicator {
+.form__input-radio-indicator,
+.form__input-checkbox-indicator {
   position: absolute;
   top: -5px;
   left: 0;
@@ -110,10 +116,13 @@
   height: 30px;
 
   border: 1px solid @special-grey;
+}
+
+.form__input-radio-indicator {
   border-radius: 50%;
 }
 
-.form__input--radio:checked + .form__input-radio-indicator::before {
+.form__input-radio:checked + .form__input-radio-indicator::before {
   .absolute();
   top: 8px;
   left: 8px;
@@ -160,4 +169,32 @@
   border: 1px solid #e7e7e7;
 
   resize: none;
+}
+
+
+.form__input-checkbox:checked + .form__input-checkbox-indicator::before,
+.form__input-checkbox:checked + .form__input-checkbox-indicator::after {
+  .absolute();
+
+  background-color: @light-green-color;
+}
+
+.form__input-checkbox:checked + .form__input-checkbox-indicator::before {
+  top: 16px;
+  left: 4px;
+
+  width: 12px;
+  height: 2px;
+
+  transform: rotate(45deg);
+}
+
+.form__input-checkbox:checked + .form__input-checkbox-indicator::after {
+  top: 13px;
+  left: 10px;
+
+  width: 18px;
+  height: 2px;
+
+  transform: rotate(-50deg);
 }
