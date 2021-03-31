@@ -44,30 +44,39 @@
           <p class="programm-selection__title">Заполните анкету, и мы подберем,<br>программу питания для вашего кота</p>
           <form class="programm-selection__form form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="form__fieldset form__fieldset--personal-data">
-              <label class="form__label">ИМЯ:*<input type="text" placeholder="БАРСИК"></label>
-              <label class="form__label">Вес (кг):*<input type="text" placeholder="7"></label>
-              <label class="form__label">Возраст (лет):<input type="text" placeholder="7"></label>
+              <div class="form__input-wrapper">
+                <label class="form__label" for="form__input-text--name">ИМЯ:*</label>
+                <input class="form__input form__input-text" id="form__input-text--name" type="text" placeholder="БАРСИК">
+              </div>
+              <div class="form__input-wrapper">
+                <label class="form__label" for="form__input-text--weight">Вес (кг):*</label>
+                <input class="form__input form__input-text" id="form__input-text--weight" type="text" placeholder="7">
+              </div>
+              <div class="form__input-wrapper" for="form__input-text--age">
+                <label class="form__label">Возраст (лет):</label>
+                <input class="form__input form__input-text" id="form__input-text--age" type="text" placeholder="7">
+              </div>
             </fieldset>
-            <fieldset class="form__fieldset form__fieldset--radio-select">
-              <label class="form__label"><input type="radio" name="programm-target">похудение</label>
-              <label class="form__label"><input type="radio" name="programm-target">Набор массы</label>
-              <label class="form__label"><input type="radio" name="programm-target">Не знаю (Нужен ваш совет)</label>
+            <fieldset class="form__fieldset form__fieldset--programm-select">
+              <label class="form__label"><input class="form__input form__input-radio" type="radio" name="programm-target">похудение</label>
+              <label class="form__label"><input class="form__input form__input-radio" type="radio" name="programm-target">Набор массы</label>
+              <label class="form__label"><input class="form__input form__input-radio" type="radio" name="programm-target">Не знаю (Нужен ваш совет)</label>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--contacts">
-              <legend>Контактные данные (владельца кота)</legend>
-              <label class="form__label">E-mail:*<input type="email" placeholder="kuklachev@gmail.com"></label>
-              <label class="form__label">Телефон:*<input type="tel" placeholder="8 (960) 900-60-90"></label>
+              <legend class="form__legend">Контактные данные (владельца кота)</legend>
+              <label class="form__label">E-mail:*<input class="form__input form__input-contact" type="email" placeholder="kuklachev@gmail.com"></label>
+              <label class="form__label">Телефон:*<input class="form__input form__input-contact" type="tel" placeholder="8 (960) 900-60-90"></label>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--comment">
-              <legend>Комментарий</legend>
-              <textarea rows="5" cols="50"></textarea>
+              <legend class="form__legend">Комментарий</legend>
+              <textarea class="form__textarea" rows="5" cols="50"></textarea>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--checkbox-select">
-              <legend>Дополнительно</legend>
-              <label class="form__label"><input type="checkbox" checked>сахарозаменитель</label>
-              <label class="form__label"><input type="checkbox">питьевая вода</label>
-              <label class="form__label"><input type="checkbox">молоко</label>
-              <label class="form__label"><input type="checkbox">витамины</label>
+              <legend class="form__legend">Дополнительно</legend>
+              <label class="form__label"><input class="form__input form__input-checkbox" type="checkbox" checked>сахарозаменитель</label>
+              <label class="form__label"><input class="form__input form__input-checkbox" type="checkbox">питьевая вода</label>
+              <label class="form__label"><input class="form__input form__input-checkbox" type="checkbox">молоко</label>
+              <label class="form__label"><input class="form__input form__input form__input-checkbox" type="checkbox">витамины</label>
             </fieldset>
             <button class="form__button button" type="submit">отправить заявку</button>
             <span>* — Обязательные поля</span>

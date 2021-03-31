@@ -1,0 +1,91 @@
+.form {
+  box-sizing: border-box;
+}
+
+.form__fieldset {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 27px;
+
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  border: none;
+
+  &--personal-data,
+  &--programm-select {
+    &::before {
+      .absolute();
+      left: 50%;
+      bottom: 0;
+      width: 100vw;
+      height: 1px;
+      background-color: #e6e6e6;
+    }
+
+    &::after {
+      .absolute();
+      right: 50%;
+      bottom: 0;
+      width: 100vw;
+      height: 1px;
+      background-color: #e6e6e6;
+    }
+  }
+
+  &--personal-data {
+    margin-bottom: 0;
+    padding-bottom: 24px;
+  }
+
+  &--programm-select {
+    padding-top: 20px;
+    padding-bottom: 22px;
+
+    color: #222222;
+  }
+
+  &--personal-data,
+  &--personal-contact,
+  &--comment {
+    color: @special-dark-grey;
+  }
+}
+
+.form__label {
+  display: block;
+
+  margin-bottom: 13px;
+  padding: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-bottom: 13px;
+}
+
+.form__input-wrapper .form__label {
+  display: inline-block;
+
+  margin-bottom: 0;
+  padding-right: 15px;
+}
+
+.form__input-wrapper .form__input {
+  flex-grow: 1;
+
+  padding-top: 13px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
