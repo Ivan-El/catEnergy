@@ -58,9 +58,18 @@
               </div>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--programm-select">
-              <label class="form__label"><input class="form__input form__input-radio" type="radio" name="programm-target">похудение</label>
-              <label class="form__label"><input class="form__input form__input-radio" type="radio" name="programm-target">Набор массы</label>
-              <label class="form__label"><input class="form__input form__input-radio" type="radio" name="programm-target">Не знаю (Нужен ваш совет)</label>
+              <label class="form__label form__label--radio">
+                <input class="form__input--radio visually-hidden" type="radio" name="programm-target" checked>
+                <span class="form__input-radio-indicator"></span>похудение
+              </label>
+              <label class="form__label  form__label--radio">
+                <input class="form__input--radio visually-hidden" type="radio" name="programm-target">
+                <span class="form__input-radio-indicator"></span>Набор массы
+              </label>
+              <label class="form__label  form__label--radio">
+                <input class="form__input--radio visually-hidden" type="radio" name="programm-target">
+                <span class="form__input-radio-indicator"></span>Не знаю (Нужен ваш совет)
+              </label>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--contacts">
               <legend class="form__legend">Контактные данные (владельца кота)</legend>

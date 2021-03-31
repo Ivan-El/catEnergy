@@ -61,6 +61,15 @@
   margin-bottom: 13px;
   padding: 0;
 
+  &--radio {
+    position: relative;
+
+    margin-bottom: 25px;
+    padding-left: 45px;
+
+    cursor: pointer;
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -88,4 +97,29 @@
   padding-top: 13px;
   padding-bottom: 15px;
   padding-left: 15px;
+}
+
+.form__input-radio-indicator {
+  position: absolute;
+  top: -5px;
+  left: 0;
+
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid @special-grey;
+  border-radius: 50%;
+}
+
+.form__input--radio:checked + .form__input-radio-indicator::before {
+  .absolute();
+  top: 8px;
+  left: 8px;
+
+  width: 13px;
+  height: 13px;
+
+  background-color: @light-green-color;
+
+  border-radius: 50%;
 }
