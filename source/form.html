@@ -33,54 +33,61 @@
       </nav>
     </header>
 
-    <main class="page-main container">
+    <main class="page-main">
+      <div class="container">
 
-      <h1 class="page-main__heading">Подбор программы</h1>
+        <h1 class="page-main__heading">Подбор программы</h1>
 
-      <section class="program-selection">
-        <h2 class="visually-hidden">Форма для отправки</h2>
-        <p class="program-selection__title">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <form class="program-selection__form form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__fieldset">
-            <label>ИМЯ:*<input type="text" placeholder="БАРСИК"></label>
-            <label>Вес (кг):*<input type="text" placeholder="7"></label>
-            <label>Возраст (лет):<input type="text" placeholder="7"></label>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <label><input type="radio" name="programm-target">похудение</label>
-            <label><input type="radio" name="programm-target">Набор массы</label>
-            <label><input type="radio" name="programm-target">Не знаю (Нужен ваш совет)</label>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend>Контактные данные (владельца кота)</legend>
-            <label>E-mail:*<input type="email" placeholder="kuklachev@gmail.com"></label>
-            <label>Телефон:*<input type="tel" placeholder="8 (960) 900-60-90"></label>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend>Комментарий</legend>
-            <textarea rows="5" cols="50"></textarea>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend>Дополнительно</legend>
-            <label><input type="checkbox" checked>сахарозаменитель</label>
-            <label><input type="checkbox">питьевая вода</label>
-            <label><input type="checkbox">молоко</label>
-            <label><input type="checkbox">витамины</label>
-          </fieldset>
-          <button class="form__button button" type="submit">отправить заявку</button>
-          <span>* — Обязательные поля</span>
-        </form>
-      </section>
+        <section class="program-selection">
 
-      <section class="partnership partnership--inner">
-        <h2 class="partnership__call">приглашаем к сотрудничеству дилеров!</h2>
-        <p class="partnership__contacts">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      </section>
+          <h2 class="visually-hidden">Форма для отправки</h2>
+          <p class="program-selection__title">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <form class="program-selection__form form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="form__fieldset">
+              <label>ИМЯ:*<input type="text" placeholder="БАРСИК"></label>
+              <label>Вес (кг):*<input type="text" placeholder="7"></label>
+              <label>Возраст (лет):<input type="text" placeholder="7"></label>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <label><input type="radio" name="programm-target">похудение</label>
+              <label><input type="radio" name="programm-target">Набор массы</label>
+              <label><input type="radio" name="programm-target">Не знаю (Нужен ваш совет)</label>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend>Контактные данные (владельца кота)</legend>
+              <label>E-mail:*<input type="email" placeholder="kuklachev@gmail.com"></label>
+              <label>Телефон:*<input type="tel" placeholder="8 (960) 900-60-90"></label>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend>Комментарий</legend>
+              <textarea rows="5" cols="50"></textarea>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend>Дополнительно</legend>
+              <label><input type="checkbox" checked>сахарозаменитель</label>
+              <label><input type="checkbox">питьевая вода</label>
+              <label><input type="checkbox">молоко</label>
+              <label><input type="checkbox">витамины</label>
+            </fieldset>
+            <button class="form__button button" type="submit">отправить заявку</button>
+            <span>* — Обязательные поля</span>
+          </form>
+        </section>
+      </div>
 
-      <section class="map">
-        <h3 class="visually-hidden">Карта</h3>
-        <iframe class="map__iframe" src="https://www.google.com/maps/d/u/0/embed?mid=1NiERkeAQxdjzrdMQ0gcSNCqIagpv5r_j"></iframe>
-      </section>
+      <div class="partnership-map-wrapper partnership-map-wrapper--inner">
+        <section class="partnership">
+          <div class="container">
+            <h2 class="partnership__call">приглашаем к сотрудничеству дилеров!</h2>
+            <p class="partnership__contacts">ул. Большая Конюшенная, д. 19/8 <span class="partnership__contacts--city">Санкт-Петербург</span></p>
+          </div>
+        </section>
+
+        <section class="map">
+          <h3 class="visually-hidden">Карта</h3>
+          <iframe class="map__iframe" src="https://www.google.com/maps/d/u/0/embed?mid=1NiERkeAQxdjzrdMQ0gcSNCqIagpv5r_j"></iframe>
+        </section>
+      </div>
     </main>
 
     <footer class="page-footer">
