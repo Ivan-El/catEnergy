@@ -1,5 +1,9 @@
 .form {
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 40px;
+  }
 }
 
 .form__fieldset {
@@ -15,6 +19,13 @@
 
   border: none;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 65px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   &--personal-data,
   &--programm-select {
     &::before {
@@ -24,6 +35,10 @@
       width: 100vw;
       height: 1px;
       background-color: #e6e6e6;
+
+      @media (min-width: @tablet-width) {
+        display: none;
+      }
     }
 
     &::after {
@@ -33,12 +48,21 @@
       width: 100vw;
       height: 1px;
       background-color: #e6e6e6;
+
+      @media (min-width: @tablet-width) {
+        display: none;
+      }
     }
   }
 
   &--personal-data {
     margin-bottom: 0;
     padding-bottom: 24px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 71px;
+      padding-bottom: 0;
+    }
   }
 
   &--programm-select {
@@ -46,10 +70,23 @@
     padding-bottom: 22px;
 
     color: #222222;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 71px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      padding-left: 28px;
+
+      border: 1px solid #e7e7e7;
+    }
   }
 
   &--checkbox-select {
     margin-bottom: 34px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 54px;
+    }
   }
 
   &--personal-data,
@@ -65,6 +102,10 @@
   margin-bottom: 13px;
   padding: 0;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
+
   &--radio,
   &--checkbox {
     position: relative;
@@ -73,6 +114,16 @@
     padding-left: 45px;
 
     cursor: pointer;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 60px;
+    }
+  }
+
+  &--checkbox {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
   &:last-child {
@@ -87,6 +138,10 @@
   flex-wrap: wrap;
 
   margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__input-wrapper .form__label {
@@ -116,6 +171,11 @@
   height: 30px;
 
   border: 1px solid @special-grey;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .form__input-radio-indicator {
@@ -133,6 +193,14 @@
   background-color: @light-green-color;
 
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    top: 10px;
+    left: 10px;
+
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .form__legend {
@@ -159,6 +227,39 @@
       left: 85%;
     }
   }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 76px;
+
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      .absolute();
+      top: 20px;
+      right: 105%;
+
+      width: 100vw;
+      height: 2px;
+
+      background-color: @light-green-color;
+    }
+
+    &::after {
+      top: 20px;
+      left: 115%;
+    }
+
+    &--contacts {
+      &::before {
+        right: 102%;
+      }
+
+      &::after {
+        left: 105%;
+      }
+    }
+  }
 }
 
 .form__textarea {
@@ -171,6 +272,15 @@
   resize: none;
 }
 
+.form__checkbox-wrapper {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 40px;
+
+    padding-right: 40px;
+  }
+}
 
 .form__input-checkbox:checked + .form__input-checkbox-indicator::before,
 .form__input-checkbox:checked + .form__input-checkbox-indicator::after {
@@ -187,6 +297,11 @@
   height: 2px;
 
   transform: rotate(45deg);
+
+  @media (min-width: @tablet-width) {
+    top: 20px;
+    left: 8px;
+  }
 }
 
 .form__input-checkbox:checked + .form__input-checkbox-indicator::after {
@@ -197,16 +312,46 @@
   height: 2px;
 
   transform: rotate(-50deg);
+
+  @media (min-width: @tablet-width) {
+    top: 18px;
+    left: 15px;
+  }
+}
+
+.form__button-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding-right: 60px;
+
+    align-items: center;
+  }
 }
 
 .form__button {
   width: 100%;
   margin-bottom: 20px;
 
+  font-size: 16px;
+
   border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 65%;
+    margin-bottom: 0;
+
+    font-size: 20px;
+  }
 }
 
 .form__footnote {
   font-family: @font-second;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
 }
