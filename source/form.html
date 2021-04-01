@@ -43,43 +43,47 @@
           <h2 class="visually-hidden">Форма для отправки</h2>
           <p class="programm-selection__title">Заполните анкету, и мы подберем,<br>программу питания для вашего кота</p>
           <form class="programm-selection__form form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="form__fieldset form__fieldset--personal-data">
-              <div class="form__input-wrapper">
-                <label class="form__label" for="form__input-text--name">ИМЯ:*</label>
-                <input class="form__input form__input-text" id="form__input-text--name" type="text" placeholder="БАРСИК">
-              </div>
-              <div class="form__input-wrapper">
-                <label class="form__label" for="form__input-text--weight">Вес (кг):*</label>
-                <input class="form__input form__input-text" id="form__input-text--weight" type="text" placeholder="7">
-              </div>
-              <div class="form__input-wrapper">
-                <label class="form__label" for="form__input-text--age">Возраст (лет):</label>
-                <input class="form__input form__input-text" id="form__input-text--age" type="text" placeholder="7">
-              </div>
-            </fieldset>
-            <fieldset class="form__fieldset form__fieldset--programm-select">
-              <label class="form__label form__label--radio">
-                <input class="form__input-radio visually-hidden" type="radio" name="programm-target" checked>
-                <span class="form__input-radio-indicator"></span>похудение
-              </label>
-              <label class="form__label  form__label--radio">
-                <input class="form__input-radio visually-hidden" type="radio" name="programm-target">
-                <span class="form__input-radio-indicator"></span>Набор массы
-              </label>
-              <label class="form__label  form__label--radio">
-                <input class="form__input-radio visually-hidden" type="radio" name="programm-target">
-                <span class="form__input-radio-indicator"></span>Не знаю (Нужен ваш совет)
-              </label>
-            </fieldset>
+            <div class="form__personal-data-wrapper">
+              <fieldset class="form__fieldset form__fieldset--personal-data">
+                <div class="form__input-wrapper">
+                  <label class="form__label" for="form__input-text--name">ИМЯ:*</label>
+                  <input class="form__input form__input-text" id="form__input-text--name" type="text" placeholder="БАРСИК">
+                </div>
+                <div class="form__input-wrapper">
+                  <label class="form__label" for="form__input-text--weight">Вес (кг):*</label>
+                  <input class="form__input form__input-text" id="form__input-text--weight" type="text" placeholder="7">
+                </div>
+                <div class="form__input-wrapper">
+                  <label class="form__label" for="form__input-text--age">Возраст (лет):</label>
+                  <input class="form__input form__input-text" id="form__input-text--age" type="text" placeholder="7">
+                </div>
+              </fieldset>
+              <fieldset class="form__fieldset form__fieldset--programm-select">
+                <label class="form__label form__label--radio">
+                  <input class="form__input-radio visually-hidden" type="radio" name="programm-target" checked>
+                  <span class="form__input-radio-indicator"></span>похудение
+                </label>
+                <label class="form__label  form__label--radio">
+                  <input class="form__input-radio visually-hidden" type="radio" name="programm-target">
+                  <span class="form__input-radio-indicator"></span>Набор массы
+                </label>
+                <label class="form__label  form__label--radio">
+                  <input class="form__input-radio visually-hidden" type="radio" name="programm-target">
+                  <span class="form__input-radio-indicator"></span>Не знаю (Нужен ваш совет)
+                </label>
+              </fieldset>
+            </div>
             <fieldset class="form__fieldset form__fieldset--contacts">
               <legend class="form__legend form__legend--contacts">Контактные данные (владельца кота)</legend>
-              <div class="form__input-wrapper">
-                <label class="form__label" for="form__input-contact--email">E-mail:*</label>
-                <input class="form__input form__input-contact" id="form__input-contact--email" type="email" placeholder="kuklachev@gmail.com">
-              </div>
-              <div class="form__input-wrapper">
-                <label class="form__label" for="form__input-contact--tel">Телефон:*</label>
-                <input class="form__input form__input-contact" id="form__input-contact--tel" type="tel" placeholder="8 (960) 900-60-90">
+              <div class="form__contacts-wrapper">
+                <div class="form__input-wrapper">
+                  <label class="form__label" for="form__input-contact--email">E-mail:*</label>
+                  <input class="form__input form__input-contact" id="form__input-contact--email" type="email" placeholder="kuklachev@gmail.com">
+                </div>
+                <div class="form__input-wrapper">
+                  <label class="form__label" for="form__input-contact--tel">Телефон:*</label>
+                  <input class="form__input form__input-contact" id="form__input-contact--tel" type="tel" placeholder="8 (960) 900-60-90">
+                </div>
               </div>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--comment">
