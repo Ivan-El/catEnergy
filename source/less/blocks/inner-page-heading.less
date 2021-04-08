@@ -1,0 +1,45 @@
+.page-main__heading {
+  position: relative;
+
+  margin: 0;
+  padding-bottom: 37px;
+
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  &--catalog {
+    &::before {
+      .absolute();
+      left: 50%;
+      bottom: 0;
+      width: 100vw;
+      height: 1px;
+      background-color: @special-light-grey;
+    }
+
+    &::after {
+      .absolute();
+      right: 50%;
+      bottom: 0;
+      width: 100vw;
+      height: 1px;
+      background-color: @special-light-grey;
+    }
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 83px;
+      padding-bottom: 0;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

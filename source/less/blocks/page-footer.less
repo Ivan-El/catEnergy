@@ -1,0 +1,28 @@
+.page-footer {
+  background-color: @basic-grey-color;
+}
+
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__logo {
+  display: block;
+
+  padding-top: 39px;
+  padding-bottom: 32px;
+
+  text-align: center;
+}
+
+.page-footer__image {
+  width: 128px;
+  height: 24px;
+}

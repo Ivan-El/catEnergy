@@ -1,0 +1,25 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+
+  .list-reset();
+
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+}
+
+.social__item {
+  padding: 20px 0;
+}
+
+.social__link {
+  .link-reset();
+}

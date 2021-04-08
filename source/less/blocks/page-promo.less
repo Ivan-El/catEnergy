@@ -1,0 +1,145 @@
+.page-promo {
+  margin-bottom: 20px;
+
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 80px;
+  }
+}
+
+.page-promo__title-wrapper {
+  padding-top: 27px;
+  padding-bottom: 168px;
+
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+
+    background-image: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+  }
+}
+
+.page-promo__heading {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 36px;
+  color: @color-font-second;
+  font-weight: 400;
+  line-height: 36px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 40px;
+
+    font-size: 60px;
+    color: @color-font-main;
+    line-height: 60px;
+    text-shadow: none;
+  }
+}
+
+.page-promo__slogan {
+  margin: 0;
+  margin-bottom: 20px;
+
+  line-height: 14px;
+  color: @color-font-second;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 10px;
+
+    line-height: 20px;
+    font-size: 20px;
+    color: @color-font-main;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.page-promo__image-wrapper {
+  padding-top: 135px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.page-promo__image-container {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 526px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 182px;
+  }
+}
+
+.page-promo__image {
+  .absolute();
+  bottom: 47px;
+  left: calc(100% - 280px);
+
+  width: 280px;
+  height: 271px;
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -300px;
+  }
+}
+
+.page-promo__title-container {
+  @media (min-width: @tablet-width) {
+    padding-right: 207px;
+    padding-left: 87px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 550px;
+    padding-left: 80px;
+  }
+}
+
+.page-promo__link {
+  @media (min-width: @tablet-width) {
+    min-width: 245px;
+    max-width: 30%;
+    margin-left: 83px;
+    padding: 15px 25px;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 20%;
+    margin-left: 80px;
+  }
+}
