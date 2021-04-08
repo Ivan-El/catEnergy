@@ -43,17 +43,21 @@
 
       <h1 class="visually-hidden">Магазин функционального питания для котов «Кэт энерджи»</h1>
 
-      <section class="page-promo">
-        <div class="page-promo__title-wrapper">
-          <div class="page-promo__title-container container">
-            <h2 class="page-promo__heading">Функциональное питание для котов</h2>
-            <p class="page-promo__slogan">Занялся собой? Займись котом!</p>
+      <section class="promo">
+        <div class="promo__title-wrapper">
+          <div class="promo__title-container container">
+            <h2 class="promo__heading">Функциональное<br>питание для котов</h2>
+            <p class="promo__slogan">Занялся собой? Займись котом!</p>
           </div>
         </div>
-        <div class="page-promo__image-wrapper">
-          <div class="page-promo__image-container container">
-            <img class="page-promo__image" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Банка питания Cat Energy PRO со вкусом курицы">
-            <a class="page-promo__link button" href="form.html">Подобрать программу</a>
+        <div class="promo__image-wrapper">
+          <div class="promo__image-container container">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
+              <img class="promo__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Банка питания Cat Energy PRO со вкусом курицы">
+            </picture>
+            <a class="promo__link button" href="form.html">Подобрать программу</a>
           </div>
         </div>
       </section>
