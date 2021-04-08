@@ -1,6 +1,6 @@
 .site-list {
   .list-reset();
-  color: #000000;
+  color: @color-font-main;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -16,6 +16,10 @@
     color: @color-font-second;
     font-size: 20px;
     line-height: 30px;
+
+    &--inner {
+      color: @color-font-main;
+    }
   }
 }
 
@@ -84,6 +88,14 @@
   @media (min-width: @desktop-width) {
     &::after {
       background-color: @color-main;
+    }
+  }
+}
+
+.site-list--inner .site-list__link--current {
+  @media (min-width: @desktop-width) {
+    &::after {
+      background-color: @light-green-color;
     }
   }
 }
