@@ -1,6 +1,6 @@
 .site-list {
   .list-reset();
-  color: #000000;
+  color: @color-font-main;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -17,7 +17,9 @@
     font-size: 20px;
     line-height: 30px;
 
-    background-color: @light-green-color;
+    &--inner {
+      color: @color-font-main;
+    }
   }
 }
 
@@ -48,8 +50,8 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-top: 42px;
-    padding-bottom: 0;
+    padding: 0;
+    padding-top: 16px;
 
     border: none;
 
@@ -86,6 +88,14 @@
   @media (min-width: @desktop-width) {
     &::after {
       background-color: @color-main;
+    }
+  }
+}
+
+.site-list--inner .site-list__link--current {
+  @media (min-width: @desktop-width) {
+    &::after {
+      background-color: @light-green-color;
     }
   }
 }
