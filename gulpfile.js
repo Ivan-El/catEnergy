@@ -39,7 +39,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: 'source'
     },
     cors: true,
     notify: false,
@@ -139,11 +139,11 @@ exports.build = build;
 // Start
 
 const start = gulp.series(
-  build, server
+  build, server, watcher
 );
 
 exports.start = start;
 
 exports.default = gulp.series(
-  styles, scripts, server, watcher
+  styles, server, watcher
 );

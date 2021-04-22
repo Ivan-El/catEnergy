@@ -9,3 +9,7 @@
 node_modules/
 npm-debug.*
 Thumbs.db
+
+source/css/*.css
+source/css/*.map
+build/
