@@ -6,7 +6,7 @@
     <title>Подбор программы "Cat Energy"</title>
     <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font" crossorigin>
     <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" crossorigin>
-    <link href="/css/style.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
   </head>
   <body class="page-form">
     <svg style="display: none">
@@ -124,13 +124,19 @@
             <fieldset class="form__fieldset form__fieldset--contacts">
               <legend class="form__legend form__legend--contacts">Контактные данные (владельца кота)</legend>
               <div class="form__contacts-wrapper">
-                <div class="form__input-wrapper">
-                  <label class="form__label" for="form__input-contact--email">E-mail:*</label>
+                <div class="form__input-wrapper form__input-wrapper--contact">
+                  <label class="form__label form__label--contacts form__label--contacts-email" for="form__input-contact--email">E-mail:*</label>
                   <input class="form__input form__input-contact" id="form__input-contact--email" type="email" placeholder="kuklachev@gmail.com">
+                  <svg class="form__input-icon form__input-icon--mail" width="20" height="14">
+                    <use xlink:href="#icon-mail"></use>
+                  </svg>
                 </div>
-                <div class="form__input-wrapper">
-                  <label class="form__label" for="form__input-contact--tel">Телефон:*</label>
+                <div class="form__input-wrapper form__input-wrapper--contact">
+                  <label class="form__label form__label--contacts form__label--contacts-tel" for="form__input-contact--tel">Телефон:*</label>
                   <input class="form__input form__input-contact" id="form__input-contact--tel" type="tel" placeholder="8 (960) 900-60-90">
+                  <svg class="form__input-icon form__input-icon--phone" width="20" height="20">
+                    <use xlink:href="#icon-phone"></use>
+                  </svg>
                 </div>
               </div>
             </fieldset>

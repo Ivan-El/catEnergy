@@ -163,6 +163,8 @@
   align-items: center;
   flex-wrap: wrap;
 
+  position: relative;
+
   margin-bottom: 13px;
 
   @media (min-width: @tablet-width) {
@@ -171,6 +173,12 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &--contact {
+    @media (min-width: @desktop-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -199,9 +207,28 @@
   }
 }
 
-.form__contacts-wrapper .form__input-wrapper {
-  @media (min-width: @desktop-width) {
-    margin-bottom: 0;
+.form__input-icon {
+  .absolute();
+  right: 13px;
+
+  &--mail {
+    top: 16px;
+    right: 15px;
+
+    @media (min-width: @tablet-width) {
+      top: 19px;
+      right: 19px;
+    }
+  }
+
+  &--phone {
+    top: 13px;
+    right: 13px;
+
+    @media (min-width: @tablet-width) {
+      top: 16px;
+      right: 17px;
+    }
   }
 }
 
