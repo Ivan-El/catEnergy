@@ -1,11 +1,17 @@
 .page-footer {
   background-color: @basic-grey-color;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
 }
 
 .page-footer__container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -16,13 +22,26 @@
 .page-footer__logo {
   display: block;
 
+  width: 128px;
   padding-top: 39px;
   padding-bottom: 32px;
 
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 3px;
+    padding-bottom: 0;
+  }
 }
 
-.page-footer__image {
-  width: 128px;
-  height: 24px;
+.page-footer__social-list {
+  width: 130px;
+}
+
+.page-footer__copyrights {
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 163px;
+  }
 }

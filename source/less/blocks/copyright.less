@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .copyright__link {
@@ -13,9 +14,38 @@
   font-size: 16px;
   line-height: 18px;
   color: @special-dark-grey;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &--academy {
+    @media (min-width: @tablet-width) {
+      padding-bottom: 6px;
+    }
+  }
+
+  &--academy:hover {
+    opacity: 0.6;
+  }
+
+  &--academy:active {
+    opacity: 0.3;
+  }
 }
 
-.copyright__image {
+.copyright__link-icon {
   width: 27px;
   height: 34px;
+  fill: #666666;
+
+  &:hover {
+    fill: @light-green-color;
+  }
+
+  &:active {
+    fill: @light-green-color;
+    opacity: 0.3;
+  }
 }

@@ -18,8 +18,33 @@
 
 .social__item {
   padding: 20px 0;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &--vk,
+  &--instagram {
+    @media (min-width: @tablet-width) {
+      padding-top: 3px;
+    }
+  }
 }
 
 .social__link {
   .link-reset();
+}
+
+.social__link-icon {
+  fill: #666666;
+
+  &:hover {
+    fill: @light-green-color;
+  }
+
+  &:active {
+    fill: @light-green-color;
+    opacity: 0.6;
+  }
 }
