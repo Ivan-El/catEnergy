@@ -170,9 +170,9 @@
           <h2 class="example__heading">Живой пример</h2>
         </div>
         <div class="example__wrapper">
-          <div class="example__container-wrapper container">
-            <div class="example__description-wrapper">
-              <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <div class="example__container container">
+            <div class="example__description">
+              <p class="example__paragraph">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
               <div class="example__list-wrapper">
                 <dl class="example__list">
                   <div class="example__item">
@@ -187,20 +187,33 @@
                 <p class="example__total">Затраты на питание: <span class="example__total-price">15 000 РУБ.</span></p>
               </div>
             </div>
-            <div class="example__difference-wrapper">
-              <div class="example__image-wrapper">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp, img/before-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
-                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
-                  <img class="example__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Похудевший кот">
-                </picture>
+            <div class="example__difference">
+              <div class="example__image-container">
+                <div class="example__image-wrapper example__image-wrapper--before">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp, img/before-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
+                    <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
+                    <img class="example__image example__image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Толстый кот">
+                  </picture>
+                </div>
+                <div class="example__image-wrapper example__image-wrapper--after">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp, img/after-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
+                    <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+                    <img class="example__image example__image--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Похудевший кот">
+                  </picture>
+                </div>
               </div>
               <div class="example__toggels">
                 <button class="example__button" type="button">было</button>
-                <input class="example__range-toggel" type="range">
+                <input class="visually-hidden example__range" type="range" id="example__range">
+                <label class="example__range-label" for="example__range"></label>
                 <button class="example__button" type="button">стало</button>
               </div>
             </div>
