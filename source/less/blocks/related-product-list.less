@@ -55,6 +55,25 @@
       left: 60%;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+
+    &::before {
+      top: 19%;
+      right: 102%;
+
+      width: 100vw;
+      height: 2px;
+
+      background-color: @light-green-color;
+    }
+
+    &::after {
+      top: 19%;
+      left: 30%;
+    }
+  }
 }
 
 .related-product-list__wrapper {

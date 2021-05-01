@@ -131,6 +131,17 @@
 }
 
 .promo__link {
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.6);
+
+    background-color: #5eaa2f;
+    border: 1px solid #000000;
+  }
+
   @media (min-width: @tablet-width) {
     min-width: 245px;
     max-width: 30%;

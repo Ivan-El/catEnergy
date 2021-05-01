@@ -286,7 +286,7 @@
     width: 354px;
     margin-top: -500px;
 
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   &--after {
@@ -350,6 +350,16 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+
+    &:hover {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    &:active {
+      border: none;
+    }
   }
 }
 
@@ -378,7 +388,7 @@
   }
 
   &:hover::before {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
   }
 
   &:active::before {
@@ -405,7 +415,7 @@
       border-radius: 50%;
       background-color: @color-main;
 
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     }
 
     &::after {

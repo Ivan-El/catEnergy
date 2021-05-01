@@ -197,6 +197,34 @@
   padding-left: 15px;
 
   border: 1px solid @special-grey;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    border: 1px solid @special-light-grey;
+  }
+
+  &:active {
+    border: 1px solid @black-color;
+  }
+
+  &:invalid {
+    border: 1px solid #ff8282;
+  }
+
+  &-contact:hover + .form__input-icon {
+    fill: @special-light-grey;
+  }
+
+  &-contact:active + .form__input-icon {
+    fill: @light-green-color;
+  }
+
+  &-contact:invalid + .form__input-icon {
+    fill: #ff8282;
+  }
 }
 
 .form__contacts-wrapper {
@@ -242,6 +270,18 @@
   height: 30px;
 
   border: 1px solid @special-grey;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active + .form__input-text {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     width: 40px;

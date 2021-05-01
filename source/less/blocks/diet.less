@@ -163,6 +163,28 @@
     border-left: 6px solid @black-color;
   }
 
+  &:hover::before {
+    width: 32px;
+  }
+
+  &:hover::after {
+    left: 127px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active::before {
+    width: 32px;
+    opacity: 0.3;
+  }
+
+  &:active::after {
+    left: 127px;
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -174,6 +196,14 @@
 
     &::after {
       left: 140px;
+    }
+
+    &:hover::after {
+      left: 150px;
+    }
+
+    &:active::after {
+      left: 150px;
     }
   }
 }
